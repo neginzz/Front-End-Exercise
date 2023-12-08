@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 
 body {
@@ -18,40 +19,41 @@ body {
 }
 .header h1 {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 .header img {
-  height: 18px;
+  height: 20px;
   padding-right: 10px;
   align-self: center;
 }
 .box {
-  background-color:#EEE1D5;
+  background-color: #eee1d5;
   color: #43281c;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .container {
-    width: 80%;
-    margin:50px auto;
-    display: grid;
-    grid-template-areas:
-     "items name"
-     "items payment";
-    row-gap: 10px;
-    column-gap: 20px;
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-areas:
+    "items name"
+    "items payment";
+  row-gap: 10px;
+  column-gap: 20px;
 }
-.container h2{
+.container h2 {
   margin: 0 0 20px 0;
   font-size: 1rem;
   font-weight: normal;
   color: #885a2d;
+  
 }
- /* --- ITEMS ---*/
+/* --- ITEMS ---*/
 
-.items{
-    grid-area: items;
-    border-radius: 5px;
+.items {
+  grid-area: items;
 }
 .items ul {
   padding: 0;
@@ -60,23 +62,21 @@ body {
   display: flex;
   flex-direction: column;
 }
-.items-wrapp li{
+.items-wrapp li {
   list-style: none;
 }
-.items-wrapp > li{
+.items-wrapp > li {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   column-gap: 20px;
   padding: 10px 0;
-  
 }
-.items-wrapp > li:not(:last-child){
-  border-bottom: 2px solid #deb993;
-
+.items-wrapp > li:not(:last-child) {
+  border-bottom: 2px solid #b08968;
 }
-.item-title li{
-  color: #B08968;
+.item-title li {
+  color: #b08968;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -91,16 +91,16 @@ body {
   font-weight: bold;
 }
 
- /* --- NAME & PAYMEN ---*/
+/* --- NAME & PAYMEN ---*/
 
 .name {
-    grid-area: name;
-    position: relative;
+  grid-area: name;
+  position: relative;
 }
-.box input{
+.box input {
   display: block;
-  background-color: #EEE1D5;
-  border: 2px solid #885a2d;
+  background-color: #eee1d5;
+  border: 2px solid #b08968;
   width: 100%;
   height: 40px;
   border-radius: 20px;
@@ -109,22 +109,22 @@ body {
 .box label {
   display: block;
   font-size: 12px;
-  color: #885a2d;
+  color: #b08968;
   position: absolute;
-  background-color:#EEE1D5;
+  background-color: #eee1d5;
   z-index: 10;
   padding: 0 5px;
 }
-.name label {  
+.name label {
   top: 55px;
   left: 45px;
 }
-.payment{
-    grid-area: payment;
-    position: relative;
+.payment {
+  grid-area: payment;
+  position: relative;
 }
 
-.payment input:last-child{
+.payment input:last-child {
   width: 50%;
   margin-top: 30px;
 }
@@ -132,15 +132,12 @@ body {
   top: 55px;
   left: 45px;
 }
-.payment label[for="ccv-number"]{
+.payment label[for="ccv-number"] {
   top: 125px;
 }
 
 section.order-box {
-  position: fixed;
-  bottom: 10px;
-  right: 0;
-  left: 0;
+  margin-top: 100px;
 }
 .order-wrapp {
   /* background-color: #78bd8b; */
@@ -165,12 +162,22 @@ section.order-box {
   width: 80%;
   margin: 20px auto;
   display: block;
-  border:none;
+  border: none;
   padding: 10px 0;
   border-radius: 20px;
   font-size: 1rem;
 }
+.order-box button:hover {
+  background-color: #eee1d5;
+  color: #885a2d;
+}
 
-
-
-
+@media only screen and (max-width: 944px) {
+  .container {
+    grid-template-areas:
+      "items"
+      "name"
+      "payment";
+    row-gap: 20px;
+  }
+}
