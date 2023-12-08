@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #43281c;
+  color: #fbf2c0;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px 0;
+}
+.header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+.header img {
+  height: 18px;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.container {
+    width: 80%;
+    margin:50px auto;
+    display: grid;
+    grid-template-areas:
+     "items name"
+     "items payment";
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.items{
+    grid-area: items;
+    background-color: aquamarine;
+}
+
+.name{
+    grid-area: name;
+    background-color: orange;
+}
+
+.payment{
+    grid-area: payment;
+    background-color: blueviolet;
+}
