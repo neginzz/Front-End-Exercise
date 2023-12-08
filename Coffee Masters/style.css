@@ -4,6 +4,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -24,6 +25,11 @@ body {
   padding-right: 10px;
   align-self: center;
 }
+.box {
+  background-color:#EEE1D5;
+  color: #43281c;
+  padding: 20px;
+}
 
 .container {
     width: 80%;
@@ -35,18 +41,64 @@ body {
     row-gap: 10px;
     column-gap: 20px;
 }
-
+.container h2{
+  margin: 0 0 20px 0;
+  font-size: 1rem;
+}
+ /* --- ITEMS ---*/
+ 
 .items{
     grid-area: items;
-    background-color: aquamarine;
+    border-radius: 5px;
 }
+.items ul {
+  padding: 0;
+}
+.items-wrapp {
+  display: flex;
+  flex-direction: column;
+}
+.items-wrapp li{
+  list-style: none;
+}
+.items-wrapp > li{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  column-gap: 20px;
+  padding: 10px 0;
+  
+}
+.items-wrapp > li:not(:last-child){
+  border-bottom: 2px solid #deb993;
 
+}
+.item-title li{
+  color: #B08968;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.item-title .main-title {
+  color: #43281c;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.item-price {
+  margin-left: auto;
+  font-weight: bold;
+}
 .name{
     grid-area: name;
-    background-color: orange;
+
 }
 
 .payment{
     grid-area: payment;
-    background-color: blueviolet;
+
 }
+
+
+
+
+
