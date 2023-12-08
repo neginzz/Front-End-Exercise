@@ -136,6 +136,40 @@ body {
   top: 125px;
 }
 
+section.order-box {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+}
+.order-wrapp {
+  /* background-color: #78bd8b; */
+  margin: 20px auto;
+  width: 50%;
+}
+.order-wrapp div:last-child {
+  font-weight: bold;
+}
+.order-wrapp span {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 5px;
+}
+.order-wrapp .price {
+  text-align: right;
+  /* background-color: #8b93d6; */
+}
+
+.order-box button {
+  background-color: #deb993;
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  border:none;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 1rem;
+}
 
 
 
