@@ -1,3 +1,5 @@
+/* ---- GLOBALLY ---- */
+
 * {
   box-sizing: border-box;
   transition: all 0.3s;
@@ -26,6 +28,9 @@ body {
   padding-right: 10px;
   align-self: center;
 }
+
+/* --- GRID BOX ---*/
+
 .box {
   background-color: #eee1d5;
   color: #43281c;
@@ -136,6 +141,8 @@ body {
   top: 125px;
 }
 
+/* --- ORDER ---*/
+
 section.order-box {
   margin-top: 100px;
 }
@@ -171,6 +178,8 @@ section.order-box {
   background-color: #eee1d5;
   color: #885a2d;
 }
+
+/* -- (phones & tablet , 944px and down) -- */
 
 @media only screen and (max-width: 944px) {
   .container {
