@@ -33,6 +33,7 @@ for (const item of allBtn) {
         return;
       } else {
         compute(parseInt(txtSet.value));
+        prevopt = null;
         txtSet.value = "" + total;
         total = 0;
       }
