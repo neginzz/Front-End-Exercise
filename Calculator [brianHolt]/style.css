@@ -14,10 +14,10 @@
     font-size: 2rem;
     padding: 0 10px ;
 }
-.btn-c{
+.span-2{
     grid-column: span 2;
 }
-.btn-zero {
+.span-3 {
     grid-column: span 3;
 }
 .btn{
@@ -29,20 +29,19 @@
     border: 1.5px solid #000;
 }
 .btn:hover{
-    background-color: #f6f6f6;
+    background-color: #ebebeb;
 }
 .btn:active{
-    background-color: #989898;
+    background-color: #bbbcbe;
 }
 .btn-opt{
     background-color: #df974c;
     color: #fff;
 }
 .btn-opt:hover{
-    background-color: #edb77d;
-
+    background-color: #dfb07e;
 }
 .btn-opt:active{
-    background-color: #ce7e28;
+    background-color: #dd8d37;
 
 }
